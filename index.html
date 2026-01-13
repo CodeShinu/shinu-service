@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shinu Service | Organização e Clareza para Pequenos Negócios</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.55;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.95);
+    border-bottom: 1px solid #8a2be2;
+    padding: 12px 32px;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 150px;
+}
+
+.nav {
+    display: flex;
+    gap: 26px;
+}
+
+.nav a {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    opacity: 1;
+    color: #8a2be2;
+}
+
+.nav .cta {
+    border: 1px solid #8a2be2;
+    padding: 6px 16px;
+    border-radius: 20px;
+}
+
+/* SECTIONS */
+section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 140px 20px 90px;
+    text-align: center;
+}
+
+.divider {
+    width: 60px;
+    height: 2px;
+    background: #8a2be2;
+    margin: 60px auto 0;
+    opacity: 0.7;
+}
+
+/* TITLES */
+.hero-title {
+    display: inline-block;
+    background: rgba(138,43,226,0.15);
+    padding: 16px 32px;
+    border-radius: 999px;
+    font-size: 2.4rem;
+    margin-bottom: 22px;
+}
+
+.section-title {
+    display: inline-block;
+    background: rgba(138,43,226,0.15);
+    color: #8a2be2;
+    padding: 10px 24px;
+    border-radius: 999px;
+    font-size: 1.8rem;
+    margin-bottom: 26px;
+}
+
+p {
+    font-size: 1.05rem;
+    opacity: 0.9;
+}
+
+/* HERO */
+#hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.hero-text p {
+    margin: 10px 0;
+}
+
+.cta-group {
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background: #8a2be2;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #6a1b9a;
+    transform: translateY(-2px);
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+    margin-top: 36px;
+}
+
+.card {
+    background: #111;
+    padding: 28px;
+    border-radius: 14px;
+    border: 1px solid #1f1f1f;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #8a2be2;
+}
+
+.card h3 {
+    color: #8a2be2;
+    margin-bottom: 12px;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+    font-size: 0.95rem;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 14px;
+    font-size: 0.85rem;
+    opacity: 0.6;
+}
+
+/* FOOTER */
+footer {
+    background: #0a0a0a;
+    border-top: 1px solid #8a2be2;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* ANIMATION */
+.fade {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: 0.7s ease;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 1.9rem;
+        padding: 14px 22px;
+    }
+    section {
+        padding-top: 160px;
+    }
+    .nav {
+        display: none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <img src="img/logo1.png" alt="Shinu Service">
+        </div>
+        <nav class="nav">
+            <a href="#hero">Início</a>
+            <a href="#para-quem">Para quem</a>
+            <a href="#como-ajudo">Como ajudo</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#contato" class="cta">Contato</a>
+        </nav>
+    </div>
+</header>
+
+<section id="hero" class="fade">
+    <h1 class="hero-title">
+        Organização e clareza para pequenos negócios que querem crescer sem caos
+    </h1>
+
+    <div class="hero-text">
+        <p>
+            Muitos empreendedores trabalham o dia inteiro, mas sentem que tudo continua bagunçado:
+            tarefas soltas, atendimento confuso e decisões tomadas no improviso.
+        </p>
+        <p>
+            Eu ajudo você a organizar sua rotina, estruturar processos simples e ganhar clareza
+            para trabalhar com mais controle e menos desgaste.
+        </p>
+    </div>
+
+    <div class="cta-group">
+        <a class="btn-primary" href="https://wa.me/5511950497851" target="_blank">
+            Falar comigo no WhatsApp
+        </a>
+    </div>
+
+    <div class="divider"></div>
+</section>
+
+<section id="para-quem" class="fade">
+    <h2 class="section-title">Para quem é</h2>
+    <p>Para quem sente que o negócio funciona, mas a rotina está pesada e desorganizada.</p>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Pequenos negócios</h3>
+            <p>Que cresceram sem estrutura e hoje vivem apagando incêndios.</p>
+        </div>
+        <div class="card">
+            <h3>Empreendedores solo</h3>
+            <p>Que fazem tudo sozinhos e precisam ganhar tempo e clareza.</p>
+        </div>
+        <div class="card">
+            <h3>Negócios em transição</h3>
+            <p>Que querem organizar antes de crescer ainda mais.</p>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+</section>
+
+<section id="como-ajudo" class="fade">
+    <h2 class="section-title">Como eu ajudo</h2>
+    <p>Entro na sua realidade, entendo sua rotina e organizo o que realmente importa.</p>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Diagnóstico</h3>
+            <p>Mapeio gargalos e pontos de confusão.</p>
+        </div>
+        <div class="card">
+            <h3>Organização</h3>
+            <p>Crio processos simples e sustentáveis.</p>
+        </div>
+        <div class="card">
+            <h3>Acompanhamento</h3>
+            <p>Ajustamos conforme o negócio evolui.</p>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+</section>
+
+<section id="depoimentos" class="fade">
+    <h2 class="section-title">O que dizem</h2>
+
+    <div class="grid">
+        <div class="card testimonial">
+            “Depois da organização, consegui trabalhar com mais calma e foco.”
+            <span> Emerson - Empreendedor</span>
+        </div>
+        <div class="card testimonial">
+            “Hoje sei exatamente o que priorizar no meu negócio.”
+            <span> Cleidivanda - Empreendedora</span>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+</section>
+
+<section id="contato" class="fade">
+    <h2 class="section-title">Vamos conversar?</h2>
+    <p>Uma conversa rápida já pode trazer mais clareza para seu dia a dia.</p>
+
+    <div class="cta-group">
+        <a class="btn-primary" href="https://wa.me/5511950497851" target="_blank">
+            WhatsApp
+        </a>
+        <a class="btn-primary" href="https://www.instagram.com/devshinu_/" target="_blank">
+            Instagram
+        </a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Shinu Service · Organização e clareza para pequenos negócios
+</footer>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
