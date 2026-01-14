@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Shinu Service | Organização e Clareza para Pequenos Negócios</title>
+<title>Shinu Service | Organização Estratégica para Pequenos Negócios</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+/* =========================
+   RESET E BASE
+========================= */
 * {
     margin: 0;
     padding: 0;
@@ -20,42 +20,44 @@
 
 body {
     font-family: 'Space Grotesk', sans-serif;
-    background-color: #000;
+    background: #000;
     color: #fff;
     line-height: 1.55;
 }
 
 a {
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0,0,0,0.95);
+    background: rgba(0,0,0,0.96);
     border-bottom: 1px solid #8a2be2;
-    padding: 12px 32px;
     z-index: 1000;
 }
 
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 10px 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .logo img {
-    height: 150px;
+    height: 80px;
 }
 
 .nav {
     display: flex;
-    gap: 26px;
+    gap: 24px;
 }
 
 .nav a {
@@ -75,7 +77,9 @@ header {
     border-radius: 20px;
 }
 
-/* SECTIONS */
+/* =========================
+   SECTIONS
+========================= */
 section {
     max-width: 1100px;
     margin: 0 auto;
@@ -88,26 +92,28 @@ section {
     height: 2px;
     background: #8a2be2;
     margin: 60px auto 0;
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
-/* TITLES */
+/* =========================
+   TIPOGRAFIA
+========================= */
 .hero-title {
     display: inline-block;
     background: rgba(138,43,226,0.15);
-    padding: 16px 32px;
+    padding: 18px 36px;
     border-radius: 999px;
     font-size: 2.4rem;
-    margin-bottom: 22px;
+    margin-bottom: 26px;
 }
 
 .section-title {
     display: inline-block;
     background: rgba(138,43,226,0.15);
     color: #8a2be2;
-    padding: 10px 24px;
+    padding: 10px 26px;
     border-radius: 999px;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin-bottom: 26px;
 }
 
@@ -116,7 +122,9 @@ p {
     opacity: 0.9;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 #hero {
     min-height: 100vh;
     display: flex;
@@ -125,16 +133,16 @@ p {
 }
 
 .hero-text {
-    max-width: 760px;
+    max-width: 780px;
     margin: 0 auto;
 }
 
 .hero-text p {
-    margin: 10px 0;
+    margin-bottom: 14px;
 }
 
 .cta-group {
-    margin-top: 22px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     gap: 14px;
@@ -143,8 +151,8 @@ p {
 
 .btn-primary {
     background: #8a2be2;
-    padding: 14px 30px;
-    border-radius: 8px;
+    padding: 15px 34px;
+    border-radius: 10px;
     font-weight: 600;
     transition: 0.3s;
 }
@@ -154,7 +162,9 @@ p {
     transform: translateY(-2px);
 }
 
-/* GRID */
+/* =========================
+   GRID / CARDS
+========================= */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -164,14 +174,14 @@ p {
 
 .card {
     background: #111;
-    padding: 28px;
-    border-radius: 14px;
+    padding: 30px;
+    border-radius: 16px;
     border: 1px solid #1f1f1f;
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-5px);
     border-color: #8a2be2;
 }
 
@@ -180,7 +190,9 @@ p {
     margin-bottom: 12px;
 }
 
-/* TESTIMONIAL */
+/* =========================
+   TESTIMONIAL
+========================= */
 .testimonial {
     font-size: 0.95rem;
 }
@@ -192,19 +204,24 @@ p {
     opacity: 0.6;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER (ÚNICO)
+========================= */
 footer {
     background: #0a0a0a;
     border-top: 1px solid #8a2be2;
     padding: 40px 20px;
     text-align: center;
     font-size: 0.9rem;
+    opacity: 0.85;
 }
 
-/* ANIMATION */
+/* =========================
+   ANIMAÇÕES
+========================= */
 .fade {
     opacity: 0;
-    transform: translateY(25px);
+    transform: translateY(30px);
     transition: 0.7s ease;
 }
 
@@ -213,17 +230,22 @@ footer {
     transform: translateY(0);
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 @media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+    .logo img {
+        height: 65px;
+    }
     .hero-title {
-        font-size: 1.9rem;
+        font-size: 1.85rem;
         padding: 14px 22px;
     }
     section {
         padding-top: 160px;
-    }
-    .nav {
-        display: none;
     }
 }
 </style>
@@ -239,118 +261,136 @@ footer {
         <nav class="nav">
             <a href="#hero">Início</a>
             <a href="#para-quem">Para quem</a>
-            <a href="#como-ajudo">Como ajudo</a>
-            <a href="#depoimentos">Depoimentos</a>
+            <a href="#como-funciona">Método</a>
+            <a href="#depoimentos">Resultados</a>
             <a href="#contato" class="cta">Contato</a>
         </nav>
     </div>
 </header>
 
+<!-- HERO -->
 <section id="hero" class="fade">
     <h1 class="hero-title">
-        Organização e clareza para pequenos negócios que querem crescer sem caos
+        Organização estratégica para quem quer crescer sem viver apagando incêndio
     </h1>
 
     <div class="hero-text">
         <p>
-            Muitos empreendedores trabalham o dia inteiro, mas sentem que tudo continua bagunçado:
-            tarefas soltas, atendimento confuso e decisões tomadas no improviso.
+            Se o seu negócio até fatura, mas sua rotina é confusa, pesada e cheia de improvisos,
+            o problema não é esforço — é falta de estrutura.
         </p>
         <p>
-            Eu ajudo você a organizar sua rotina, estruturar processos simples e ganhar clareza
-            para trabalhar com mais controle e menos desgaste.
+            Eu ajudo pequenos empreendedores a organizar processos, prioridades e decisões
+            para ganhar controle, clareza e previsibilidade.
         </p>
     </div>
 
     <div class="cta-group">
-        <a class="btn-primary" href="https://wa.me/5511950497851" target="_blank">
-            Falar comigo no WhatsApp
+        <a class="btn-primary"
+           href="https://wa.me/5511950497851?text=Olá,%20vim%20pelo%20site%20da%20Shinu%20Service.%20Meu%20negócio%20está%20desorganizado%20e%20quero%20entender%20como%20funciona%20a%20organização."
+           target="_blank">
+            Quero organizar meu negócio
         </a>
     </div>
 
     <div class="divider"></div>
 </section>
 
+<!-- PARA QUEM -->
 <section id="para-quem" class="fade">
-    <h2 class="section-title">Para quem é</h2>
-    <p>Para quem sente que o negócio funciona, mas a rotina está pesada e desorganizada.</p>
+    <h2 class="section-title">Isso é para você se</h2>
 
     <div class="grid">
         <div class="card">
-            <h3>Pequenos negócios</h3>
-            <p>Que cresceram sem estrutura e hoje vivem apagando incêndios.</p>
+            <h3>Você trabalha muito</h3>
+            <p>Mas sente que está sempre atrasado ou correndo atrás.</p>
         </div>
         <div class="card">
-            <h3>Empreendedores solo</h3>
-            <p>Que fazem tudo sozinhos e precisam ganhar tempo e clareza.</p>
+            <h3>Seu negócio depende de você</h3>
+            <p>E tudo trava quando você para.</p>
         </div>
         <div class="card">
-            <h3>Negócios em transição</h3>
-            <p>Que querem organizar antes de crescer ainda mais.</p>
+            <h3>Você decide no improviso</h3>
+            <p>Sem clareza do que realmente importa.</p>
         </div>
     </div>
 
     <div class="divider"></div>
 </section>
 
-<section id="como-ajudo" class="fade">
-    <h2 class="section-title">Como eu ajudo</h2>
-    <p>Entro na sua realidade, entendo sua rotina e organizo o que realmente importa.</p>
+<!-- MÉTODO -->
+<section id="como-funciona" class="fade">
+    <h2 class="section-title">Como funciona na prática</h2>
 
     <div class="grid">
         <div class="card">
-            <h3>Diagnóstico</h3>
-            <p>Mapeio gargalos e pontos de confusão.</p>
+            <h3>1. Diagnóstico real</h3>
+            <p>Entendo sua rotina, gargalos e onde o caos começa.</p>
         </div>
         <div class="card">
-            <h3>Organização</h3>
-            <p>Crio processos simples e sustentáveis.</p>
+            <h3>2. Organização estratégica</h3>
+            <p>Crio processos simples que você realmente consegue manter.</p>
         </div>
         <div class="card">
-            <h3>Acompanhamento</h3>
-            <p>Ajustamos conforme o negócio evolui.</p>
+            <h3>3. Ajustes contínuos</h3>
+            <p>A organização evolui junto com o negócio.</p>
         </div>
     </div>
-
-    <div class="divider"></div>
-</section>
-
-<section id="depoimentos" class="fade">
-    <h2 class="section-title">O que dizem</h2>
-
-    <div class="grid">
-        <div class="card testimonial">
-            “Depois da organização, consegui trabalhar com mais calma e foco.”
-            <span> Emerson - Empreendedor</span>
-        </div>
-        <div class="card testimonial">
-            “Hoje sei exatamente o que priorizar no meu negócio.”
-            <span> Cleidivanda - Empreendedora</span>
-        </div>
-    </div>
-
-    <div class="divider"></div>
-</section>
-
-<section id="contato" class="fade">
-    <h2 class="section-title">Vamos conversar?</h2>
-    <p>Uma conversa rápida já pode trazer mais clareza para seu dia a dia.</p>
 
     <div class="cta-group">
-        <a class="btn-primary" href="https://wa.me/5511950497851" target="_blank">
-            WhatsApp
+        <a class="btn-primary"
+           href="https://wa.me/5511950497851?text=Quero%20entender%20se%20esse%20método%20funciona%20para%20meu%20negócio."
+           target="_blank">
+            Ver se isso funciona para mim
         </a>
-        <a class="btn-primary" href="https://www.instagram.com/devshinu_/" target="_blank">
+    </div>
+
+    <div class="divider"></div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos" class="fade">
+    <h2 class="section-title">Resultados percebidos</h2>
+
+    <div class="grid">
+        <div class="card testimonial">
+            “Hoje sei exatamente o que fazer primeiro e parei de trabalhar no automático.”
+            <span>Empreendedor de serviços</span>
+        </div>
+        <div class="card testimonial">
+            “A organização me deu clareza para tomar decisões melhores.”
+            <span>Pequena empresária</span>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+</section>
+
+<!-- CONTATO FINAL -->
+<section id="contato" class="fade">
+    <h2 class="section-title">Pronto para sair do caos?</h2>
+    <p>Uma conversa rápida já mostra se a organização faz sentido para você.</p>
+
+    <div class="cta-group">
+        <a class="btn-primary"
+           href="https://wa.me/5511950497851?text=Quero%20sair%20do%20caos%20e%20organizar%20meu%20negócio."
+           target="_blank">
+            Falar no WhatsApp
+        </a>
+        <a class="btn-primary"
+           href="https://www.instagram.com/devshinu_/"
+           target="_blank">
             Instagram
         </a>
     </div>
 </section>
 
 <footer>
-    © 2026 Shinu Service · Organização e clareza para pequenos negócios
+    © 2026 Shinu Service · Organização estratégica para pequenos negócios
 </footer>
 
 <script>
+/* Animação leve para reforçar percepção premium */
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -364,3 +404,4 @@ document.querySelectorAll('.fade').forEach(el => observer.observe(el));
 
 </body>
 </html>
+
