@@ -4,127 +4,81 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Shinu Service | Organização Estratégica para Pequenos Negócios</title>
+<title>Shinu Service | Organização Estratégica de Alto Nível</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-/* =========================
-   RESET E BASE
-========================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --bg-main: #0a0a0f;
+    --border-soft: rgba(255,255,255,0.08);
+    --accent: #a970ff;
+    --accent-strong: #7a3cff;
+    --text-main: #ffffff;
+    --text-muted: rgba(255,255,255,0.68);
+}
+
 body {
-    font-family: 'Space Grotesk', sans-serif;
-    background: #000;
-    color: #fff;
-    line-height: 1.55;
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(1200px 600px at 50% -10%, #1a1a26, var(--bg-main));
+    color: var(--text-main);
+    line-height: 1.6;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-/* =========================
-   HEADER
-========================= */
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0,0,0,0.96);
-    border-bottom: 1px solid #8a2be2;
+    backdrop-filter: blur(18px);
+    background: rgba(10,10,15,0.75);
+    border-bottom: 1px solid var(--border-soft);
     z-index: 1000;
 }
 
 .header-container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px 32px;
+    margin: auto;
+    padding: 14px 32px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
-.logo img {
-    height: 80px;
-}
+.logo img { height: 100px; }
 
 .nav {
     display: flex;
-    gap: 24px;
+    gap: 32px;
 }
 
 .nav a {
-    font-size: 0.95rem;
-    opacity: 0.85;
+    font-size: 0.9rem;
+    color: var(--text-muted);
     transition: 0.3s;
 }
 
-.nav a:hover {
-    opacity: 1;
-    color: #8a2be2;
-}
+.nav a:hover { color: var(--text-main); }
 
 .nav .cta {
-    border: 1px solid #8a2be2;
-    padding: 6px 16px;
-    border-radius: 20px;
+    padding: 9px 20px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+    color: #fff;
 }
 
-/* =========================
-   SECTIONS
-========================= */
 section {
     max-width: 1100px;
-    margin: 0 auto;
-    padding: 140px 20px 90px;
+    margin: auto;
+    padding: 170px 24px 120px;
     text-align: center;
 }
 
-.divider {
-    width: 60px;
-    height: 2px;
-    background: #8a2be2;
-    margin: 60px auto 0;
-    opacity: 0.6;
-}
-
-/* =========================
-   TIPOGRAFIA
-========================= */
-.hero-title {
-    display: inline-block;
-    background: rgba(138,43,226,0.15);
-    padding: 18px 36px;
-    border-radius: 999px;
-    font-size: 2.4rem;
-    margin-bottom: 26px;
-}
-
-.section-title {
-    display: inline-block;
-    background: rgba(138,43,226,0.15);
-    color: #8a2be2;
-    padding: 10px 26px;
-    border-radius: 999px;
-    font-size: 1.7rem;
-    margin-bottom: 26px;
-}
-
-p {
-    font-size: 1.05rem;
-    opacity: 0.9;
-}
-
-/* =========================
-   HERO
-========================= */
 #hero {
     min-height: 100vh;
     display: flex;
@@ -132,97 +86,134 @@ p {
     justify-content: center;
 }
 
-.hero-text {
-    max-width: 780px;
-    margin: 0 auto;
+.hero-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    margin-bottom: 18px;
+}
+
+.hero-title {
+    font-size: 3.6rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1.08;
+    margin-bottom: 26px;
+}
+
+.hero-title span {
+    background: linear-gradient(90deg, var(--accent), #d3b6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero-text p {
-    margin-bottom: 14px;
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    max-width: 760px;
+    margin: auto;
 }
 
 .cta-group {
-    margin-top: 30px;
+    margin-top: 44px;
     display: flex;
     justify-content: center;
-    gap: 14px;
+    gap: 18px;
     flex-wrap: wrap;
 }
 
 .btn-primary {
-    background: #8a2be2;
-    padding: 15px 34px;
-    border-radius: 10px;
-    font-weight: 600;
-    transition: 0.3s;
+    padding: 18px 42px;
+    border-radius: 16px;
+    font-weight: 500;
+    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+    color: #fff;
+    box-shadow: 0 25px 60px rgba(169,112,255,0.35);
+    transition: 0.35s ease;
 }
 
 .btn-primary:hover {
-    background: #6a1b9a;
-    transform: translateY(-2px);
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 35px 80px rgba(169,112,255,0.5);
 }
 
-/* =========================
-   GRID / CARDS
-========================= */
+.btn-secondary {
+    padding: 18px 42px;
+    border-radius: 16px;
+    font-weight: 500;
+    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+    color: #fff;
+    box-shadow: 0 25px 60px rgba(169,112,255,0.35);
+    transition: 0.35s ease;
+}
+
+.btn-secondary:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 25px 60px rgba(169,112,255,0.25);
+}
+
+.section-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+}
+
+.section-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.section-title span {
+    background: linear-gradient(90deg, var(--accent), #d3b6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 28px;
-    margin-top: 36px;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 36px;
 }
 
 .card {
-    background: #111;
-    padding: 30px;
-    border-radius: 16px;
-    border: 1px solid #1f1f1f;
-    transition: 0.3s;
+    background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.015));
+    border: 1px solid var(--border-soft);
+    border-radius: 24px;
+    padding: 42px 38px;
+    text-align: left;
+    transition: 0.45s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    border-color: #8a2be2;
+    transform: translateY(-8px);
+    border-color: var(--accent);
 }
 
-.card h3 {
-    color: #8a2be2;
-    margin-bottom: 12px;
-}
+.card h3 { margin-bottom: 12px; }
 
-/* =========================
-   TESTIMONIAL
-========================= */
-.testimonial {
+.card p {
     font-size: 0.95rem;
+    color: var(--text-muted);
 }
 
-.testimonial span {
-    display: block;
-    margin-top: 14px;
-    font-size: 0.85rem;
-    opacity: 0.6;
-}
-
-/* =========================
-   FOOTER (ÚNICO)
-========================= */
 footer {
-    background: #0a0a0a;
-    border-top: 1px solid #8a2be2;
-    padding: 40px 20px;
+    border-top: 1px solid var(--border-soft);
+    padding: 60px 20px;
     text-align: center;
-    font-size: 0.9rem;
-    opacity: 0.85;
+    font-size: 0.85rem;
+    color: var(--text-muted);
 }
 
-/* =========================
-   ANIMAÇÕES
-========================= */
 .fade {
     opacity: 0;
-    transform: translateY(30px);
-    transition: 0.7s ease;
+    transform: translateY(50px);
+    transition: 1s cubic-bezier(.2,.8,.2,1);
 }
 
 .fade.show {
@@ -230,23 +221,10 @@ footer {
     transform: translateY(0);
 }
 
-/* =========================
-   MOBILE
-========================= */
 @media (max-width: 768px) {
-    .nav {
-        display: none;
-    }
-    .logo img {
-        height: 65px;
-    }
-    .hero-title {
-        font-size: 1.85rem;
-        padding: 14px 22px;
-    }
-    section {
-        padding-top: 160px;
-    }
+    .nav { display: none; }
+    .hero-title { font-size: 2.4rem; }
+    .section-title { font-size: 1.9rem; }
 }
 </style>
 </head>
@@ -260,142 +238,104 @@ footer {
         </div>
         <nav class="nav">
             <a href="#hero">Início</a>
-            <a href="#para-quem">Para quem</a>
-            <a href="#como-funciona">Método</a>
-            <a href="#depoimentos">Resultados</a>
+            <a href="#perfil">Perfil</a>
+            <a href="#metodo">Método</a>
             <a href="#contato" class="cta">Contato</a>
         </nav>
     </div>
 </header>
 
-<!-- HERO -->
 <section id="hero" class="fade">
+    <div class="hero-eyebrow">Consultoria estratégica</div>
+
     <h1 class="hero-title">
-        Organização estratégica para quem quer crescer sem viver apagando incêndio
+        Estruture seu negócio<br>
+        <span>para operar com clareza</span><br>
+        e decisões consistentes
     </h1>
 
     <div class="hero-text">
         <p>
-            Se o seu negócio até fatura, mas sua rotina é confusa, pesada e cheia de improvisos,
-            o problema não é esforço — é falta de estrutura.
-        </p>
-        <p>
-            Eu ajudo pequenos empreendedores a organizar processos, prioridades e decisões
-            para ganhar controle, clareza e previsibilidade.
+            A Shinu Service atua na organização estratégica de pequenos negócios
+            que precisam sair do improviso e alcançar previsibilidade real.
         </p>
     </div>
 
     <div class="cta-group">
-        <a class="btn-primary"
-           href="https://wa.me/5511950497851?text=Olá,%20vim%20pelo%20site%20da%20Shinu%20Service.%20Meu%20negócio%20está%20desorganizado%20e%20quero%20entender%20como%20funciona%20a%20organização."
-           target="_blank">
-            Quero organizar meu negócio
+        <a class="btn-primary" href="https://wa.me/5511950497851" target="_blank">
+            Agendar conversa estratégica
         </a>
     </div>
-
-    <div class="divider"></div>
 </section>
 
-<!-- PARA QUEM -->
-<section id="para-quem" class="fade">
-    <h2 class="section-title">Isso é para você se</h2>
+<section id="perfil" class="fade">
+    <div class="section-eyebrow">Perfil ideal</div>
+    <h2 class="section-title">
+        Para quem busca <span>estrutura real</span>
+    </h2>
 
     <div class="grid">
         <div class="card">
-            <h3>Você trabalha muito</h3>
-            <p>Mas sente que está sempre atrasado ou correndo atrás.</p>
+            <h3>Empreendedores sobrecarregados</h3>
+            <p>Que trabalham muito, mas decidem sem clareza estratégica.</p>
         </div>
         <div class="card">
-            <h3>Seu negócio depende de você</h3>
-            <p>E tudo trava quando você para.</p>
+            <h3>Negócios dependentes do dono</h3>
+            <p>Onde tudo passa por você e nada funciona sem sua presença.</p>
         </div>
         <div class="card">
-            <h3>Você decide no improviso</h3>
-            <p>Sem clareza do que realmente importa.</p>
+            <h3>Empresas em fase de crescimento</h3>
+            <p>Que precisam se organizar antes de escalar.</p>
         </div>
     </div>
-
-    <div class="divider"></div>
 </section>
 
-<!-- MÉTODO -->
-<section id="como-funciona" class="fade">
-    <h2 class="section-title">Como funciona na prática</h2>
+<section id="metodo" class="fade">
+    <div class="section-eyebrow">Nosso método</div>
+    <h2 class="section-title">
+        Organização que gera <span>controle e previsibilidade</span>
+    </h2>
 
     <div class="grid">
         <div class="card">
-            <h3>1. Diagnóstico real</h3>
-            <p>Entendo sua rotina, gargalos e onde o caos começa.</p>
+            <h3>Diagnóstico estratégico</h3>
+            <p>Levantamento profundo da operação, gargalos e prioridades.</p>
         </div>
         <div class="card">
-            <h3>2. Organização estratégica</h3>
-            <p>Crio processos simples que você realmente consegue manter.</p>
+            <h3>Estruturação prática</h3>
+            <p>Processos simples, claros e aplicáveis à sua rotina.</p>
         </div>
         <div class="card">
-            <h3>3. Ajustes contínuos</h3>
-            <p>A organização evolui junto com o negócio.</p>
+            <h3>Acompanhamento contínuo</h3>
+            <p>Ajustes estratégicos conforme o negócio evolui.</p>
         </div>
     </div>
-
-    <div class="cta-group">
-        <a class="btn-primary"
-           href="https://wa.me/5511950497851?text=Quero%20entender%20se%20esse%20método%20funciona%20para%20meu%20negócio."
-           target="_blank">
-            Ver se isso funciona para mim
-        </a>
-    </div>
-
-    <div class="divider"></div>
 </section>
 
-<!-- DEPOIMENTOS -->
-<section id="depoimentos" class="fade">
-    <h2 class="section-title">Resultados percebidos</h2>
-
-    <div class="grid">
-        <div class="card testimonial">
-            “Hoje sei exatamente o que fazer primeiro e parei de trabalhar no automático.”
-            <span>Empreendedor de serviços</span>
-        </div>
-        <div class="card testimonial">
-            “A organização me deu clareza para tomar decisões melhores.”
-            <span>Pequena empresária</span>
-        </div>
-    </div>
-
-    <div class="divider"></div>
-</section>
-
-<!-- CONTATO FINAL -->
 <section id="contato" class="fade">
-    <h2 class="section-title">Pronto para sair do caos?</h2>
-    <p>Uma conversa rápida já mostra se a organização faz sentido para você.</p>
+    <div class="section-eyebrow">Próximo passo</div>
+    <h2 class="section-title">
+        Pronto para <span>profissionalizar seu negócio</span>?
+    </h2>
 
     <div class="cta-group">
-        <a class="btn-primary"
-           href="https://wa.me/5511950497851?text=Quero%20sair%20do%20caos%20e%20organizar%20meu%20negócio."
-           target="_blank">
-            Falar no WhatsApp
+        <a class="btn-primary" href="https://wa.me/5511950497851" target="_blank">
+            WhatsApp
         </a>
-        <a class="btn-primary"
-           href="https://www.instagram.com/devshinu_/"
-           target="_blank">
+        <a class="btn-secondary" href="https://www.instagram.com/devshinu_/" target="_blank">
             Instagram
         </a>
     </div>
 </section>
 
 <footer>
-    © 2026 Shinu Service · Organização estratégica para pequenos negócios
+    © 2026 Shinu Service · Consultoria estratégica
 </footer>
 
 <script>
-/* Animação leve para reforçar percepção premium */
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        }
+        if (entry.isIntersecting) entry.target.classList.add('show');
     });
 }, { threshold: 0.15 });
 
@@ -404,4 +344,5 @@ document.querySelectorAll('.fade').forEach(el => observer.observe(el));
 
 </body>
 </html>
+
 
