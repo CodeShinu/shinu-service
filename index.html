@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Shinu Service | Organização Estratégica</title>
+<title>Shinu Service | Organização Estratégica de Alto Nível</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -50,7 +50,7 @@ header {
     align-items: center;
 }
 
-.logo img { height: 100px; }
+.logo img { height: 150px; }
 
 .nav {
     display: flex;
@@ -65,12 +65,31 @@ header {
 
 .nav a:hover { color: var(--text-main); }
 
-.nav .cta {
-    padding: 9px 20px;
-    border-radius: 999px;
-    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+/* ===== MENU COM COR (EQUILIBRADO) ===== */
+
+.nav a {
+    position: relative;
+    font-size: 0.9rem;
     color: #fff;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(169,112,255,0.12);
+    border: 1px solid rgba(169,112,255,0.25);
+    transition: 0.3s ease;
 }
+
+.nav a:hover {
+    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+    box-shadow: 0 10px 30px rgba(169,112,255,0.45);
+}
+
+
+/* Link ativo (opcional – se quiser marcar página atual) */
+.nav a.active {
+    color: #fff;
+    background: rgba(169,112,255,0.25);
+}
+
 
 section {
     max-width: 1100px;
@@ -123,22 +142,7 @@ section {
     flex-wrap: wrap;
 }
 
-.btn-primary {
-    padding: 18px 42px;
-    border-radius: 16px;
-    font-weight: 500;
-    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
-    color: #fff;
-    box-shadow: 0 25px 60px rgba(169,112,255,0.35);
-    transition: 0.35s ease;
-}
-
-.btn-primary:hover {
-    transform: translateY(-4px);
-    border-color: var(--accent);
-    box-shadow: 0 35px 80px rgba(169,112,255,0.5);
-}
-
+.btn-primary,
 .btn-secondary {
     padding: 18px 42px;
     border-radius: 16px;
@@ -149,10 +153,10 @@ section {
     transition: 0.35s ease;
 }
 
+.btn-primary:hover,
 .btn-secondary:hover {
     transform: translateY(-4px);
-    border-color: var(--accent);
-    box-shadow: 0 25px 60px rgba(169,112,255,0.25);
+    box-shadow: 0 35px 80px rgba(169,112,255,0.5);
 }
 
 .section-eyebrow {
@@ -202,14 +206,6 @@ section {
     color: var(--text-muted);
 }
 
-footer {
-    border-top: 1px solid var(--border-soft);
-    padding: 60px 20px;
-    text-align: center;
-    font-size: 0.85rem;
-    color: var(--text-muted);
-}
-
 .fade {
     opacity: 0;
     transform: translateY(50px);
@@ -219,6 +215,14 @@ footer {
 .fade.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+footer {
+    border-top: 1px solid var(--border-soft);
+    padding: 60px 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-muted);
 }
 
 @media (max-width: 768px) {
@@ -240,27 +244,24 @@ footer {
             <a href="#hero">Início</a>
             <a href="#perfil">Perfil</a>
             <a href="#metodo">Método</a>
-            <a href="#contato" class="cta">Contato</a>
+            <a href="#contato">Contato</a>
         </nav>
     </div>
 </header>
 
 <section id="hero" class="fade">
     <div class="hero-eyebrow">Consultoria estratégica</div>
-
     <h1 class="hero-title">
         Estruture seu negócio<br>
         <span>para operar com clareza</span><br>
         e decisões consistentes
     </h1>
-
     <div class="hero-text">
         <p>
             A Shinu Service atua na organização estratégica de pequenos negócios
             que precisam sair do improviso e alcançar previsibilidade real.
         </p>
     </div>
-
     <div class="cta-group">
         <a class="btn-primary" href="https://wa.me/5511950497851" target="_blank">
             Agendar conversa estratégica
@@ -273,7 +274,6 @@ footer {
     <h2 class="section-title">
         Para quem busca <span>estrutura real</span>
     </h2>
-
     <div class="grid">
         <div class="card">
             <h3>Empreendedores sobrecarregados</h3>
@@ -295,7 +295,6 @@ footer {
     <h2 class="section-title">
         Organização que gera <span>controle e previsibilidade</span>
     </h2>
-
     <div class="grid">
         <div class="card">
             <h3>Diagnóstico estratégico</h3>
@@ -312,12 +311,55 @@ footer {
     </div>
 </section>
 
+<!-- NOVA SEÇÃO -->
+<section id="servicos" class="fade">
+    <div class="section-eyebrow">Como posso ajudar</div>
+    <h2 class="section-title">
+        Soluções pensadas para <span>gerar resultado</span>
+    </h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Presença Digital Essencial</h3>
+            <p>
+                Para quem está começando ou quer se profissionalizar online.<br><br>
+                • Identidade visual (logo, cores e tipografia)<br>
+                • Site institucional simples e profissional<br>
+                • Direcionamento estratégico de presença digital<br><br>
+                <strong>Resultado:</strong> Seu negócio passa mais confiança e tem um ponto de contato claro.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Estrutura Online Profissional</h3>
+            <p>
+                Para negócios que já vendem, mas sentem falta de organização.<br><br>
+                • Ajustes e otimização do site para conversão<br>
+                • Organização do atendimento digital<br>
+                • Apoio estratégico na rotina online<br><br>
+                <strong>Resultado:</strong> Menos improviso, mais clareza e eficiência no dia a dia.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Organização Estratégica</h3>
+            <p>
+                Para empreendedores sobrecarregados com tarefas e decisões.<br><br>
+                • Diagnóstico da rotina do negócio<br>
+                • Organização de processos e prioridades<br>
+                • Tecnologia e IA como apoio estratégico<br><br>
+                <strong>Resultado:</strong> Mais tempo, menos caos e decisões mais claras.
+            </p>
+        </div>
+    </div>
+
+</section>
+
 <section id="contato" class="fade">
     <div class="section-eyebrow">Próximo passo</div>
     <h2 class="section-title">
         Pronto para <span>profissionalizar seu negócio</span>?
     </h2>
-
     <div class="cta-group">
         <a class="btn-primary" href="https://wa.me/5511950497851" target="_blank">
             WhatsApp
@@ -344,6 +386,3 @@ document.querySelectorAll('.fade').forEach(el => observer.observe(el));
 
 </body>
 </html>
-
-
-
